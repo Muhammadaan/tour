@@ -1,0 +1,767 @@
+{% extends "layout/main.html" %}
+
+{% block content %}
+<!-- page header -->
+<section class="header" style="background-image: url(assets/images/header-1920x1135-1.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1>
+                            Tours
+                        </h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text ever since
+                        </p>
+                        <div class="ui breadcrumb">
+                            <a class="section" href="index.html">
+                                Home
+                            </a>
+                            <div class="divider">
+                                /
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- hotel -->
+<section class="tour-inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="tools-ber">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 hidden-xs">
+                            <div class="input-group custom-search">
+                                <input class="form-control" placeholder="Search" type="text"/>
+                                <span class="input-group-btn">
+                                    <button class="btn hotel-search" type="button">
+                                        <span class="fa fa-search">
+                                        </span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <!-- filters select -->
+                            <div class="select-filters">
+                                <select id="sort-price" name="sort_price">
+                                    <option selected="" value="">
+                                        Sort by price
+                                    </option>
+                                    <option value="lower">
+                                        Lowest price
+                                    </option>
+                                    <option value="higher">
+                                        Highest price
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-2">
+                            <!-- filters select -->
+                            <div class="select-filters">
+                                <select id="sort-rank" name="sort_price">
+                                    <option selected="" value="">
+                                        Sort by ranking
+                                    </option>
+                                    <option value="lower">
+                                        Rank one
+                                    </option>
+                                    <option value="higher">
+                                        Rank one
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- collapse map -->
+            <div class="col-sm-12">
+                <div class="collapse" id="collapseMap">
+                    <!-- The element that will contain Google Map. This is used in both the Javascript and CSS above. -->
+                    <div id="map">
+                    </div>
+                </div>
+            </div>
+            <!-- sideber -->
+            <div class="col-sm-4 col-md-3">
+                <!-- price pips -->
+              
+                <!-- star -->
+               
+                <!-- Facility -->
+               
+                <div class="sidber-box help-widget">
+                    <i class="flaticon-photographer-with-cap-and-glasses">
+                    </i>
+                    <h4>
+                        Need
+                        <span>
+                            Help?
+                        </span>
+                    </h4>
+                    <a class="phone" href="tours.html#">
+                        085102499250
+                    </a>
+                    <small>
+                        Monday to Friday 9.00am - 7.30pm
+                    </small>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <div class="hotel-list-content">
+                    <div class="row grid-margin">
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-4.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            City sightseeing
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-2.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Historic Buildings
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-3.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Museums
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-4.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Mariott Hotel
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-5.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Pyramid
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-6.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Tour Eiffel Tour
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-6.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Beach Tour
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-8.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Mariott Hotel
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-9.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Adventure Toure
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-10.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            City Tours
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-11.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Mariott Hotel
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid-item">
+                            <div class="grid-item-inner">
+                                <div class="grid-img-thumb">
+                                    <!-- ribbon -->
+                                    <div class="ribbon">
+                                        <span>
+                                            Popular
+                                        </span>
+                                    </div>
+                                    <a href="tours.html#">
+                                        <img alt="1" class="img-responsive" src="{{baseUrl}}/public/assets/images/tour-370x370-12.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="grid-price text-right">
+                                        Only
+                                        <span>
+                                            <sub>
+                                                $
+                                            </sub>
+                                            785
+                                        </span>
+                                    </div>
+                                    <div class="grid-text">
+                                        <div class="place-name">
+                                            Mariott Hotel
+                                        </div>
+                                        <div class="travel-times">
+                                            <h4 class="pull-left">
+                                                3 days 2 nights
+                                            </h4>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                                <i class="fa fa-star">
+                                                </i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ../grid item -->
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="pagination-inner">
+                    <!-- pager -->
+                    <ul class="pager">
+                        <li class="previous">
+                            <a href="tours.html#">
+                                Previous
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="tours.html#">
+                                Next
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- pagination -->
+                    <ul class="pagination">
+                        <li>
+                            <a href="tours.html#">
+                                1
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="tours.html#">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tours.html#">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tours.html#">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tours.html#">
+                                ...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tours.html#">
+                                15
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Newsletter -->
+{% endblock %}

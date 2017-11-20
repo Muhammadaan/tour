@@ -1,0 +1,27 @@
+<div class=" box_style_1">
+    <div class="widget">
+        <h4>Random post</h4>
+
+        <ul class="recent_post">
+            {% for key, val in recent_post %}
+            <li>
+                <a href="{{path_for('detail',{'alias':val.alias})}}">
+                    <img src="{{val.img}}" class="img-responsive" style="margin-bottom: 10px">
+                </a>
+                <i class="icon-calendar-empty"></i> {{val.created_at}}
+                <div><a href="{{path_for('detail',{'alias':val.alias})}}">{{val.judul}} </a></div>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div><!-- End widget -->
+
+    <div class="widget tags add_bottom_30">
+        <h4>Category</h4>
+
+        {% for val in category %}
+        <a href="{{path_for('category',{'alias':val.nama})}}">{{val.nama  }}</a>
+        {% endfor %}
+    </div><!-- End widget -->
+
+</div><!-- End box-sidebar -->

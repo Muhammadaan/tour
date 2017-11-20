@@ -1,0 +1,55 @@
+{% extends "layout/main.html" %}
+
+{% block content %}
+
+
+<!-------------------------------------->
+<section id="main_content">
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">{{artikel.judul}}</li>
+        </ol>
+
+        <div class="row">
+            <aside class="col-md-4">
+                 {% include 'layout/sidebar.html' %}
+            </aside><!-- End aside -->
+
+            <div class="col-md-8">
+                <div class="post" style="margin-top: 5px;">
+                    <!--<a href="blog_post.html" title="single_post.html"><img src="img/blog-3.jpg" alt="" class="img-responsive"></a>-->
+                    <div class="post_info clearfix">
+                        <div class="post-left">
+                            <ul>
+                                <li><i class="icon-calendar-empty"></i>On {{artikel.created_at}}</li>
+                                <li><i class="icon-user"></i>By {{artikel.creator}}</li>
+                                <!--<li><i class="icon-tags"></i>Tags <a href="#">Works</a> <a href="#">Personal</a></li>-->
+                            </ul>
+                        </div>
+                        <div class="post-right">{{artikel.dibaca}} Views</div>
+                    </div>
+                    <h2><a>{{artikel.judul}}</a></h2>
+                    <p>
+                        {{artikel.konten|raw}}
+                    </p>
+                </div><!-- end post -->
+
+                <hr>
+
+                {% if artikel.single_post != 1 %}
+                <h4>Comments</h4>
+                {% endif %}
+                <!--KOMENTAR FACEBOOK-->
+                
+                <!--KOMENTAR FACEBOOK-->
+
+            </div><!-- End col-md-8-->   
+
+
+        </div>  <!-- End row-->    
+    </div><!-- End container -->
+</section><!-- End main_content-->
+{% endblock %}

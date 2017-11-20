@@ -1,0 +1,9 @@
+
+ 
+  $scope.lines = [{text: 'res1'}, {text:'res2'}];
+
+  <div ng-repeat="line in lines">
+           <-- typing here should auto update it's preview above -->
+           <input value="{{line.text}}" ng-model="text{{$index}}"/>
+            <!-- many other fields here that will also affect the preview -->
+       </div>

@@ -1,0 +1,132 @@
+
+                    <div align="left">
+                        <p>
+                        </p>
+                        <center>
+                            <h3 style="margin: 0px;">
+                                LAPORAN KAS
+                            </h3>
+                        </center>
+                        <br>
+                        <div class="col-md-12">
+                            <div class="table table-responsive">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align: center;">
+                                                Tanggal
+                                            </th>
+                                            <th style="text-align: center;">
+                                                Kode Akun / No Transaksi
+                                            </th>
+                                            <th style="text-align: center;">
+                                               Akun / Keterangan
+                                            </th>
+                                            <th style="text-align: center;vertical-align: middle;">
+                                                Masuk
+                                            </th>
+                                            <th style="text-align: center;vertical-align: middle;">
+                                                keluar
+                                            </th> 
+                                        </tr> 
+                                    </thead>
+                                    <tbody ng-show="!isLoading" class="">
+                                        <!-- ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">BELI09940</td>
+                                            <td class="ng-binding">Pembelian</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">BS00002</td>
+                                            <td class="ng-binding">Bayar Supplier Pada Pembelian BELI09802</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 955.179</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08305</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 13.000</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08306</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 9.360</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08307</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 171.700</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08308</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 36.150</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08309</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 110.600</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08310</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 11.620</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08311</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 200.000</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08312</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 2.000</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08313</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 6.138</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08314</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 6.490</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08315</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 12.800</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed --><tr ng-repeat="list in displayed" class="ng-scope">
+                                            <td style="text-align: center;" class="ng-binding">1 Nov 2017</td>
+                                            <td style="text-align: left;" class="ng-binding">JUAL08316</td>
+                                            <td class="ng-binding">Penjualan</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 13.800</td>
+                                            <td style="text-align: right;" class="ng-binding">Rp 0</td>
+                                        </tr><!-- end ngRepeat: list in displayed -->
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="3" style="text-align: right">Total</th>
+                                            <th style="text-align: right;" class="ng-binding">Rp 593.658</th>
+                                            <th style="text-align: right;" class="ng-binding">Rp 955.179</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                

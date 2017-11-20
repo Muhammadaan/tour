@@ -1,0 +1,161 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div id="logo-box">
+        <div class="logo-size">
+            <img class="org-img" id="appLogoImgID" src="../app/img/default.png"/>
+        </div>
+    </div>
+    <div class="top-header">
+        <div class="float-left" style="height: 69px;">
+            <h1 class="left-150">
+                <label id="title-aplikasi">
+                    {{user.title}}
+                </label>
+            </h1>
+        </div>
+        <div class="float-right menu-atas" style="padding-top: 20px; margin-right: 45px ">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" ng-show="user.akses.master_akses || user.akses.master_user || user.akses.master_template_emai">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle white" data-toggle="dropdown" role="button">
+                        <i class="fa fa-gear"></i> Penggaturan
+                        <span class="caret">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu" style="min-width:200px;">
+
+                        <li ng-show="user.akses.master_roles"> 
+                            <a ui-sref="master.roles">
+                                <i class="fa fa-key ">
+                                </i> 
+                                Hak Akses
+                            </a>
+                        </li>
+                        <li ng-show="user.akses.master_user">
+                            <a ui-sref="master.user">
+                                <i class="fa fa-user-circle-o ">
+                                </i>  
+                                Pengguna
+                            </a>
+                        </li>
+                         <li ng-show="user.akses.master_setting">
+                            <a ui-sref="master.setting">
+                                <i class="fa fa-desktop ">
+                                </i>  
+                                Website
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle white" data-toggle="dropdown" role="button">
+                        <i class="fa fa-user-o"></i>  {{user.nama}}
+                        <span class="caret">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu" style="min-width:200px;">
+                        <li>
+                            <a ui-sref="master.userprofile">
+                                <i class="fa fa-edit ">
+                                </i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-click="logout()">
+                                <i class="glyphicon glyphicon-off ">
+                                </i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid bg-white">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="sr-only">
+                    Toggle navigation
+                </span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse " id="navbar">
+            <ul class="nav navbar-nav left-125">
+                <li>
+                    <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" role="button" ui-sref="site.dashboard">
+                        <i class="glyphicon glyphicon-home icon text-info-lter">
+                        </i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="dropdown" ng-show="(user.akses.master_artikel || user.akses.master_kategori_artikel || user.akses.master_slider || user.akses.master_kategori_pengaduan)">
+                    <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" role="button">
+                        <i class="glyphicon glyphicon-th-large icon text-info-lter">
+                        </i>
+                        Master
+                        <span class="caret">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-show="user.akses.master_kategori_artikel">
+                            <a ui-sref="master.kategori_artikel">
+                                <i class="glyphicon glyphicon-menu-right">
+                                </i>
+                                Kategori Artikel
+                            </a>
+                        </li>
+                        <li ng-show="user.akses.master_artikel">
+                            <a ui-sref="master.artikel">
+                                <i class="glyphicon glyphicon-menu-right">
+                                </i>
+                                 Artikel
+                            </a>
+                        </li>
+                        <li ng-show="user.akses.master_slider">
+                            <a ui-sref="master.slider">
+                                <i class="glyphicon glyphicon-menu-right">
+                                </i>
+                                Slider
+                            </a>
+                        </li>
+                        <li ng-show="user.akses.master_kategori_pengaduan">
+                            <a ui-sref="master.kategori_pengaduan">
+                                <i class="glyphicon glyphicon-menu-right">
+                                </i>
+                                Kategori Pengaduan
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li   ng-show="user.akses.data_boking_ruangan">
+                    <a ui-sref="data.boking_ruangan" >
+                        <i class="fa fa-university icon text-info-lter">
+                        </i>
+                        Boking Ruangan
+                    </a>
+                </li>
+                
+                <li   ng-show="user.akses.data_pengaduan">
+                    <a ui-sref="data.pengaduan" >
+                        <i class="fa fa-grav icon text-info-lter">
+                        </i>
+                        Pengaduan Sarpras
+                    </a>
+                </li>
+                
+                <li   ng-show="user.akses.data_testimoni">
+                    <a ui-sref="data.testimoni" >
+                        <i class="fa fa-handshake-o icon text-info-lter">
+                        </i>
+                        Testimoni
+                    </a>
+                </li>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,58 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="modal-title">
+                <h4 style="margin-top: 3px">{{title}}</b></h4>
+            </div>
+        </div>
+        <div class="col-xs-3" align="right">
+            <button ng-click="back()" title="Cancel"  class="btn btn-rounded btn btn-icon btn-default"><i class="fa fa-arrow-left"></i> Kembali</button>
+            <button ng-click="close()" title="Cancel"  class="btn btn-rounded btn btn-icon btn-default"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+    </div>
+</div>
+<div class="modal-body" style="padding: 0px;">
+    <table class="table table-striped table-hover" style="padding: 0px;margin-bottom: 0px;" ng-if="is_index">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Diklat</th>
+                <th>Tanggal Mulai</th>
+                <th>Tanggal Selesai</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="val in formmodal.detail">
+                <td class="text-center">{{$index + 1}}</td>
+                <td class="text-left">{{val.title}}</td>
+                <td class="text-center">{{val.start_date| date}}</td>
+                <td class="text-center">{{val.end_date| date}}</td>
+                <td class="text-center">{{val.status}}</td>
+                <td><button class="fa fa-eye" uib-tooltip="Lihat" ng-click="view(val)"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped table-hover" style="padding: 0px;margin-bottom: 0px;" ng-if="is_history">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="val in history">
+                <td class="text-center">{{$index + 1}}</td>
+                <td class="text-center">{{val.tanggal | date}}</td>
+                <td class="text-center">{{val.keterangan}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--</div>-->
+<!--<div class="modal-footer">                  
+    <button class="btn btn-danger" ng-disabled="formmodal.keterangan == undefined" ng-click="save(formmodal)"><i class="fa fa-minus-circle"></i> Tolak Pendaftaran</button>
+</div>-->
