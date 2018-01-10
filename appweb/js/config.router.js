@@ -163,23 +163,20 @@ angular.module('app').config(
                                 ]
                             }
                         })
-                        .state('data', {
-                            url: '/data',
-                            templateUrl: 'tpl/app.html'
-                        })
-                        .state('data.testimoni', {
-                            url: '/testimoni',
-                            templateUrl: 'tpl/testimoni/testimoni.html',
+                      
+
+                        .state('master.text_slider', {
+                            url: '/text-slider',
+                            templateUrl: 'tpl/m_text_slider/index.html',
                             resolve: {
                                 deps: ['$ocLazyLoad',
                                     function ($ocLazyLoad) {
-                                        return $ocLazyLoad.load(['naif.base64']).then(function () {
-                                            return $ocLazyLoad.load('tpl/testimoni/testimoni.js');
-                                        });
+                                        return $ocLazyLoad.load('tpl/m_text_slider/index.js');
                                     }
                                 ]
                             }
                         })
+
 
                 /*VERIVIKASI */
 

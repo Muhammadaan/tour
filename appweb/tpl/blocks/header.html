@@ -8,43 +8,43 @@
         <div class="float-left" style="height: 69px;">
             <h1 class="left-150">
                 <label id="title-aplikasi">
-                    {{user.title}}
+                  Admin Tourdirections
                 </label>
             </h1>
         </div>
         <div class="float-right menu-atas" style="padding-top: 20px; margin-right: 45px ">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown" ng-show="user.akses.master_akses || user.akses.master_user || user.akses.master_template_emai">
-                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle white" data-toggle="dropdown" role="button">
-                        <i class="fa fa-gear"></i> Penggaturan
-                        <span class="caret">
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu" style="min-width:200px;">
+              <li class="dropdown" ng-show="user.akses.master_akses || user.akses.master_user || user.akses.master_template_emai">
+                   <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle white" data-toggle="dropdown" role="button">
+                       <i class="fa fa-gear"></i> Pengaturan
+                       <span class="caret">
+                       </span>
+                   </a>
+                   <ul class="dropdown-menu" style="min-width:200px;">
 
-                        <li ng-show="user.akses.master_roles"> 
-                            <a ui-sref="master.roles">
-                                <i class="fa fa-key ">
-                                </i> 
-                                Hak Akses
-                            </a>
-                        </li>
-                        <li ng-show="user.akses.master_user">
-                            <a ui-sref="master.user">
-                                <i class="fa fa-user-circle-o ">
-                                </i>  
-                                Pengguna
-                            </a>
-                        </li>
-                         <li ng-show="user.akses.master_setting">
-                            <a ui-sref="master.setting">
-                                <i class="fa fa-desktop ">
-                                </i>  
-                                Website
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                       <li ng-show="user.akses.master_roles">
+                           <a ui-sref="master.roles">
+                               <i class="fa fa-key ">
+                               </i>
+                               Hak Akses
+                           </a>
+                       </li>
+                       <li ng-show="user.akses.master_user">
+                           <a ui-sref="master.user">
+                               <i class="fa fa-user-circle-o ">
+                               </i>
+                               Pengguna
+                           </a>
+                       </li>
+                        <li ng-show="user.akses.master_setting">
+                           <a ui-sref="master.setting">
+                               <i class="fa fa-desktop ">
+                               </i>
+                               Website
+                           </a>
+                       </li>
+                   </ul>
+               </li>
                 <li class="dropdown">
                     <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle white" data-toggle="dropdown" role="button">
                         <i class="fa fa-user-o"></i>  {{user.nama}}
@@ -103,6 +103,14 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu">
+
+                      <li ng-show="user.akses.master_text_slider">
+                          <a ui-sref="master.text_slider">
+                              <i class="glyphicon glyphicon-menu-right">
+                              </i>
+                            Text Slider
+                          </a>
+                      </li>
                         <li ng-show="user.akses.master_kategori_artikel">
                             <a ui-sref="master.kategori_artikel">
                                 <i class="glyphicon glyphicon-menu-right">
@@ -133,29 +141,7 @@
                         </li>
                     </ul>
                 </li>
-                <li   ng-show="user.akses.data_boking_ruangan">
-                    <a ui-sref="data.boking_ruangan" >
-                        <i class="fa fa-university icon text-info-lter">
-                        </i>
-                        Boking Ruangan
-                    </a>
-                </li>
-                
-                <li   ng-show="user.akses.data_pengaduan">
-                    <a ui-sref="data.pengaduan" >
-                        <i class="fa fa-grav icon text-info-lter">
-                        </i>
-                        Pengaduan Sarpras
-                    </a>
-                </li>
-                
-                <li   ng-show="user.akses.data_testimoni">
-                    <a ui-sref="data.testimoni" >
-                        <i class="fa fa-handshake-o icon text-info-lter">
-                        </i>
-                        Testimoni
-                    </a>
-                </li>
+
         </div>
     </div>
 </nav>

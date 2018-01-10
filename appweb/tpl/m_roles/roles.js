@@ -160,7 +160,8 @@ app.controller('rolesCtrl', function($scope, Data, toaster) {
             "master_kategori_pengaduan": false,
             "master_setting": false,
             "master_slider": false,
-            
+            "master_text_slider" : false,
+
             "data_pengaduan": false,
             "data_boking_ruangan": false,
             "data_testimoni": false
